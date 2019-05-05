@@ -16,11 +16,8 @@ function App() {
 
   <div>
   <Route  exact path = "/" component= {Home}/>
-  <Route path = "/rooms/" component= {Rooms}/>
-  <Route path = "/single-room/" component= {SingleRoom}/>
-
-
-
+  <Route  exact path = "/rooms/" component= {Rooms}/>
+  <Route exact path = "/single-room/" component= {SingleRoom}/>
 
   </div>
   );
