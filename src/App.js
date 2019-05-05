@@ -15,9 +15,12 @@ function App() {
 
 
   <div>
-  <Route  exact path = "/" component= {Home}/>
-  <Route  exact path = "/rooms/" component= {Rooms}/>
-  <Route exact path = "/rooms/:slug" component= {SingleRoom}/>
+  <Switch>
+      <Route  exact path = "/" component= {Home}/>
+      <Route  exact path = "/rooms/" component= {Rooms}/>
+      <Route exact path = "/rooms/:slug" component= {SingleRoom}/>
+  </Switch>
+
 
   </div>
   );
